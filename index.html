@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Registration Form</h1>
+      <p class="intro">
+        Please fill out the registration form with the required information
+      </p>
+    </header>
+    <main>
+      <form action="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+          <label for="first-name">Enter Your First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </fieldset>
+        <fieldset>
+          <label for="last-name">Enter Your Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </fieldset>
+        <fieldset>
+          <label for="email">Enter Your email:</label>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+        <fieldset>
+          <label for="password">Create a New Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$"
+          />
+          <h6>
+            password should include at least one lowercase letter, one uppercase
+            letter, one special symbol and one number and should be longer than
+            8 character's and less than 16 characters.
+          </h6>
+        </fieldset>
+        <hr />
+        <fieldset>
+          <p>Account Type (required):</p>
+          <label for="personal">
+            <input type="radio" id="personal" name="radio" />
+            Personal
+          </label>
+          <label for="business">
+            <input type="radio" id="business" name="radio" />
+            Business
+          </label>
+        </fieldset>
+        <hr />
+        <fieldset>
+          <label for="picture">
+            <p>Upload a profile picture:</p>
+            <input type="file" id="picture" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>Input your age(years):</p>
+          <label for="age">
+            <input type="text" id="age" min="13" max="134" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="referrer">
+            <p>How did you hear about us:</p>
+            <select name="referrer" id="referrer">
+              <option value="select">(select one)</option>
+              <option value="News">freeCodeCamp News</option>
+              <option value="YouTube">freeCodeCamp YouTube Channel</option>
+              <option value="Forum">freeCodeCamp Forum</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="bio">
+            <p>Provide a Bio:</p>
+            <textarea
+              name="bio"
+              id="bio"
+              placeholder="I was once a space pirate..."
+              cols="60"
+              rows="10"
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="terms">
+          <label for="terms">
+            <input type="checkbox" id="terms" required />
+            <p class="terms__text">
+              I accept the
+              <a href="https://www.freecodecamp.org/news/terms-of-service/"
+                >terms and conditions</a
+              >
+            </p>
+          </label>
+        </fieldset>
+        <label for="submit">
+          <input type="submit" id="submit" value="Submit" />
+        </label>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+    margin-bottom: -8px;
+  }
+
+  .intro {
+    font-size: 10px;
+  }
+  main {
+    height: 100%;
+    font-size: 12px;
+  }
+  form {
+    width: 98%;
+    height: 100%;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  h6 {
+    font-size: 8px;
+    margin-right: 140px;
+    margin-top: 2px;
+  }
+
+  #personal,
+  #business {
+    margin-left: -160px;
+    margin-right: -170px;
+  }
+
+  textarea {
+    width: 70%;
+  }
+
+  #terms {
+    margin-left: -165px;
+  }
+
+  .terms__text {
+    margin-top: -22px;
+  }
+
+  #submit {
+    margin-left: 30px;
+  }
+
+  body {
+    margin: auto;
+    padding: auto;
+  }
+}
